@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+
+
+@import "styles/bootstrap/scss/mixins";
+
+@import 'styles/bootstrap/custom-variables.scss';
+
+
+// scss-docs-start import-stack
+// Configuration
+@import "styles/bootstrap/scss/functions";
+@import "styles/bootstrap/scss/variables";
+
+@import "styles/bootstrap/scss/variables-dark";
+
+
+// tema
+
+@import 'styles/bootstrap/custom.scss';
+
+@import "styles/bootstrap/scss/maps";
+@import "styles/bootstrap/scss/mixins";
+@import "styles/bootstrap/scss/utilities";
+
+// Layout & components
+@import "styles/bootstrap/scss/root";
+@import "styles/bootstrap/scss/reboot";
+@import "styles/bootstrap/scss/type";
+@import "styles/bootstrap/scss/images";
+@import "styles/bootstrap/scss/containers";
+@import "styles/bootstrap/scss/grid";
+@import "styles/bootstrap/scss/tables";
+@import "styles/bootstrap/scss/forms";
+@import "styles/bootstrap/scss/buttons";
+@import "styles/bootstrap/scss/transitions";
+@import "styles/bootstrap/scss/dropdown";
+@import "styles/bootstrap/scss/button-group";
+@import "styles/bootstrap/scss/nav";
+@import "styles/bootstrap/scss/navbar";
+@import "styles/bootstrap/scss/card";
+@import "styles/bootstrap/scss/accordion";
+@import "styles/bootstrap/scss/breadcrumb";
+@import "styles/bootstrap/scss/pagination";
+@import "styles/bootstrap/scss/badge";
+@import "styles/bootstrap/scss/alert";
+@import "styles/bootstrap/scss/progress";
+@import "styles/bootstrap/scss/list-group";
+@import "styles/bootstrap/scss/close";
+@import "styles/bootstrap/scss/toasts";
+@import "styles/bootstrap/scss/modal";
+@import "styles/bootstrap/scss/tooltip";
+@import "styles/bootstrap/scss/popover";
+@import "styles/bootstrap/scss/carousel";
+@import "styles/bootstrap/scss/spinners";
+@import "styles/bootstrap/scss/offcanvas";
+@import "styles/bootstrap/scss/placeholders";
+
+// Helpers
+@import "styles/bootstrap/scss/helpers";
+
+// Utilities
+@import "styles/bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+
+
+

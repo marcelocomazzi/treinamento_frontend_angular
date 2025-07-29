@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg bg-body-secondary rounded w-100" aria-label="Harpia Navbar">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09"
+            aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation"
+            (click)="isCollapsed.set(!isCollapsed())"><span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div [ngbCollapse]="isCollapsed()" class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+            <a class="navbar-brand col-3" href="#" data-bs-toggle="collapse" data-bs-target="#navbarsExample09"
+                aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">Navbar</a>
+
+
+            <ul class="navbar-nav justify-content-center col-6">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+
+                <li class="nav-item dropdown" ngbDropdown>
+                    <a class="nav-link dropdown-toggle" ngbDropdownToggle data-bs-toggle="dropdown"
+                        aria-expanded="false">Formulários</a>
+                    <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
+                        <a class="dropdown-item" href="#" ngbDropdownItem>Usuários</a>
+                        <a class="dropdown-item" href="#" ngbDropdownItem>Another action</a>
+                        <a class="dropdown-item" href="#" ngbDropdownItem>Something else here</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown" ngbDropdown>
+                    <a class="nav-link dropdown-toggle" ngbDropdownToggle data-bs-toggle="dropdown"
+                        aria-expanded="false">Tabelas</a>
+                    <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
+                        <a class="dropdown-item" href="#" ngbDropdownItem>Cidades</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown" ngbDropdown>
+                    <a class="nav-link dropdown-toggle" ngbDropdownToggle data-bs-toggle="dropdown"
+                        aria-expanded="false">Google Maps</a>
+                    <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
+                        <a class="dropdown-item" href="#" ngbDropdownItem>Action</a>
+                        <a class="dropdown-item" href="#" ngbDropdownItem>Another action</a>
+                        <a class="dropdown-item" href="#" ngbDropdownItem>Something else here</a>
+                    </div>
+                </li>
+            </ul>
+
+
+            <div class="col-3">
+                <button class="btn btn-sm btn-primary float-lg-end float-sm-start me-3">Entrar</button>
+            </div>
+        </div>
+    </div>
+</nav>
