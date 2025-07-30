@@ -1,0 +1,29 @@
+<div class="border-bottom text-danger">
+    <h3 class="text-center">Cadastro de Países</h3>
+</div>
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Bacen</th>
+            <th scope="col">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (pais of paises(); track pais.pais_id) {
+        <tr>
+            <td>{{ pais.pais_id }}</td>
+            <td>{{ pais.nome }}</td>
+            <td>{{ pais.bacen }}</td>
+            <td>
+                <button class="btn btn-sm btn-primary" (click)="edit(pais)">Editar</button>
+                <button class="btn btn-sm btn-danger" (click)="delete(pais)">Excluir</button>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+<ngb-pagination class="d-flex justify-content-end" [(page)]="pageNumber" [pageSize]="pageSize()" [collectionSize]="total()"
+    (pageChange)="setPage()">
+</ngb-pagination>
